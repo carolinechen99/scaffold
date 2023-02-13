@@ -1,4 +1,4 @@
-name: Python 3.9 AWS
+name: Python 3.9 Azure
 
 on: [push]
 
@@ -15,7 +15,7 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        make install
+        make install-azure
     - name: Lint with pylint
       run: |
         make lint
